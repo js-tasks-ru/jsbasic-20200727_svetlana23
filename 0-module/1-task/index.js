@@ -7,4 +7,3 @@
 function sum(m, n) {
   return m + n;
 }
-sum(6, 8);
