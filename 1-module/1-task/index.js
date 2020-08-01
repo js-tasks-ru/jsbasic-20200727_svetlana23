@@ -4,15 +4,13 @@
  * @returns {number}
  */
 function factorial(n) {
-  let arr = [];
   let a = n;
-  for (let i = 0; a > 0; i++) {
-    arr.push(a);
-    a = a - 1;
+  let c = 1;
+
+  for (let i = 0; a > 1; i++) {
+    let b = a *(a - 1);
+    a = a - 2;
+    c = b * c;
   }
-  let result = arr.reduce(function(el, next) {
-    return el * next;
-  }, 1);
-  return result;
+  return c;
 }
-factorial(5);
