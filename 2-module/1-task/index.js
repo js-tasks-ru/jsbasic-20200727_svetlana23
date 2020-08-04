@@ -12,3 +12,24 @@ function sumSalary(salaries) {
   }
   return sum;
 }
+
+
+function isEmpty(obj) {
+  if (obj) {
+    return true;
+  } return false;
+  console.log(obj);
+  for (let key in obj) {
+    console.log(key);
+    if (key == false ) {
+      return true;
+    }
+      return false;
+
+
+  }
+
+}
+
+let schedule = {};
+isEmpty(schedule);
