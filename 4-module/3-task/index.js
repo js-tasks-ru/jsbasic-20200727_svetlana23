@@ -7,7 +7,7 @@ function highlight(table) {
   let tbodyArr = Array.from(rows).filter ((item, index) => index > 0);
 
   function setAttr (arr) {
-     return arr.map(item => {
+    arr.forEach(item => {
       if (item.cells[3].getAttribute('data-available') == 'true') {
         item.classList.add('available');
 
@@ -20,7 +20,7 @@ function highlight(table) {
   }
 
   function setGender (arr) {
-     return arr.map(item => {
+    arr.forEach(item => {
       if (item.cells[2].innerHTML == 'm') {
         item.classList.add('male');
       } else {
@@ -30,7 +30,7 @@ function highlight(table) {
   }
 
   function checkAge (arr) {
-     return arr.map(item => {
+    arr.forEach(item => {
       if (item.cells[1].innerHTML < 18) {
         item.style.textDecoration = 'line-through';
       }

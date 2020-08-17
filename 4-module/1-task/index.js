@@ -8,7 +8,7 @@ function makeFriendsList(friends) {
 
   for (let value of friends) {
     let li = document.createElement('li');
-    li.innerHTML = value.firstName + ' ' + value.lastName;
+    li.innerHTML = `${value.firstName} ${value.lastName}`;
     list.append(li);
   }
   return list;
